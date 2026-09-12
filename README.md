@@ -2,8 +2,8 @@
 
 Full-stack app with:
 
-- **Frontend:** React + Vite + TypeScript
-- **Backend:** Express + TypeScript
+- **Frontend:** Next.js (pages router) + TypeScript + Tailwind
+- **Backend:** Express + TypeScript, layered architecture (model/repository/service/controller)
 - **Database:** MariaDB
 - **ORM:** Drizzle ORM + Drizzle Kit
 - **Dev env:** `nix develop` ready
@@ -32,14 +32,14 @@ pnpm dev:client
 
 ## Structure
 
-- `client/` – React + Vite frontend
-- `server/` – Express + TypeScript API with Drizzle ORM
+- `front-end/` – Next.js frontend
+- `back-end/` – Express API with Drizzle ORM
 - `docker-compose.yml` – Local MariaDB
 - `flake.nix` – Nix dev shell (Node, pnpm, etc.)
 
 ## Environment
 
-Create `server/.env`:
+Create `back-end/.env`:
 
 ```env
 DATABASE_URL="mysql://user:password@localhost:3306/app"

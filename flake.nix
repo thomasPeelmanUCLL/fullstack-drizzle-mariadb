@@ -1,5 +1,5 @@
 {
-  description = "Full-stack React + Express + Drizzle + MariaDB dev environment";
+  description = "Full-stack Next.js + Express + Drizzle + MariaDB dev environment";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";

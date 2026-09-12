@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev:client": "pnpm --filter client dev",
-    "dev:server": "pnpm --filter server dev",
-    "build": "pnpm --filter client build && pnpm --filter server build",
-    "db:generate": "pnpm --filter server db:generate",
-    "db:migrate": "pnpm --filter server db:migrate",
-    "db:push": "pnpm --filter server db:push"
+    "dev:client": "pnpm --filter front-end dev",
+    "dev:server": "pnpm --filter back-end dev",
+    "build": "pnpm --filter front-end build && pnpm --filter back-end build",
+    "db:generate": "pnpm --filter back-end db:generate",
+    "db:migrate": "pnpm --filter back-end db:migrate",
+    "db:push": "pnpm --filter back-end db:push"
   },
   "engines": {
     "node": ">=20"
